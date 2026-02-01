@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Will you be my Valentine?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="stage">
+    <div class="card" id="card">
+      <h1>Will you be my Valentine?</h1>
+      <p class="subtitle">(Choose wisely 💘)</p>
+
+      <div class="choices" id="choices">
+        <button class="btn yes" id="yesBtn">Yes ❤️</button>
+        <button class="btn no" id="noBtn" aria-hidden="false">No 😅</button>
+      </div>
+
+      <p class="hint">Click Yes to see something special.</p>
+    </div>
+  </main>
+
+  <!-- Poster overlay -->
+  <div id="posterOverlay" class="overlay hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="poster" id="poster">
+      <div id="posterInner" class="poster-inner">
+        <!-- generated SVG will be inserted here -->
+      </div>
+
+      <div class="poster-actions">
+        <a id="downloadLink" class="btn small" download="valentine_poster.svg">Download Poster</a>
+        <button id="closePoster" class="btn small">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
